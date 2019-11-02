@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  padding: 50px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+
+    button:first-child {
+      margin-right: 8px;
+    }
+  }
+}

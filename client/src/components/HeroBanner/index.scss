@@ -1,0 +1,45 @@
+.hero-banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 77%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  &__background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+    &::before {
+      background: #F37335;
+      background-blend-mode: darken;
+      background-image: url('https://images.unsplash.com/photo-1470754260170-299cad39501f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'), linear-gradient(#FDC830, #F37335);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      height: 100%;
+      object-fit: contain;
+      opacity: .85;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: white;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    color: white;
+    font-size: 24px;
+    margin: 40px 0;
+  }
+}
