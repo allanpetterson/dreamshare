@@ -1,6 +1,7 @@
 .hero-banner {
   align-items: center;
   display: flex;
+  flex: none;
   flex-direction: column;
   height: 77%;
   justify-content: center;
@@ -15,8 +16,9 @@
 
     &::before {
       background: #F37335;
+      background-attachment: fixed;
       background-blend-mode: darken;
-      background-image: url('https://images.unsplash.com/photo-1470754260170-299cad39501f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'), linear-gradient(#FDC830, #F37335);
+      background-image: url('https://images.unsplash.com/photo-1470754260170-299cad39501f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440'), linear-gradient(#FDC830, #F37335);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

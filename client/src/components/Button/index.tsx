@@ -21,7 +21,7 @@ export const Button = ({
     const smallClass = size === 'small' ? 'button--small' : '';
     const outlinedClass = variant === 'outlined' ? 'button--outlined' : '';
     const containedClass = variant === 'contained' ? 'button--contained' : '';
-    const primaryColorClass = color == 'primary' ? 'button--primary' : '';
+    const primaryColorClass = color === 'primary' ? 'button--primary' : '';
 
     return (
         <button className={
