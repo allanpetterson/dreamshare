@@ -1,8 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Slider, { Settings } from 'react-slick';
 
 // Constants
-import { Cards, Dictionary } from '../../constants/Data';
+import { Dictionary, CardIF } from '../../constants/Data';
 
 // Components
 import Card from '../../components/Card';
@@ -10,9 +11,12 @@ import Card from '../../components/Card';
 // Styles
 import './index.scss';
 
-const CardsContainer = () => {
+interface CardsContainerProps {
+  cards: CardIF[];
+  processing: boolean;
+}
 
-
+const CardsContainer = ({ cards, processing }: CardsContainerProps) => {
   const settings: Settings = {
     dots: true,
     infinite: true,
@@ -33,12 +37,15 @@ const CardsContainer = () => {
 
   };
 
+  if (processing)
+    return null;
+
   return (
     <div className="cards-container">
       <span className="section__title">{Dictionary.CARDS_TITLE}</span>
       <Slider {...settings}>
         {
-          Cards.map((card, i) => {
+          cards.map((card, i) => {
             return (
               <Card card={card}
                 key={i} />
@@ -50,4 +57,14 @@ const CardsContainer = () => {
   );
 }
 
-export default CardsContainer;
+const mapStateToProps = (state: any) => {
+  const { cards, processing, error } = state;
+
+  return ({
+    cards,
+    processing,
+    error,
+  });
+};
+
+export default connect(mapStateToProps)(CardsContainer);
