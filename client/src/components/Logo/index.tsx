@@ -3,6 +3,12 @@ import React from 'react';
 // Styles
 import './index.scss'
 
-const Logo: React.FC = () => <span className="logo">Dreamshare</span>
+const Logo = ({primary} : {
+    primary?: boolean
+}) => <span className={
+    `logo ${
+        primary ? 'primary' : ''
+    }`
+}>Dreamshare</span>
 
 export default Logo;

@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .hero-banner {
   align-items: center;
   display: flex;
@@ -15,10 +17,10 @@
     z-index: -1;
 
     &::before {
-      background: #F37335;
+      background: $orange;
       background-attachment: fixed;
       background-blend-mode: darken;
-      background-image: url('https://images.unsplash.com/photo-1470754260170-299cad39501f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440'), linear-gradient(#FDC830, #F37335);
+      background-image: url('https://images.unsplash.com/photo-1470754260170-299cad39501f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440'), linear-gradient($light-orange, $orange);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -32,16 +34,22 @@
   }
 
   &__title {
-    color: white;
-    font-size: 52px;
+    color: $white;
+    font-size: 3.25em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
   }
 
   &__description {
-    color: white;
-    font-size: 24px;
-    margin: 40px 0;
+    color: $white;
+    font-size: 1.5em;
+    margin: 1.7em 0;
+  }
+}
+
+@include respond-to('phone') {
+  .hero-banner {
+    height: 100%;
   }
 }

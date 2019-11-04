@@ -1,36 +1,45 @@
+@import '../../variables';
+
 .button {
   align-items: center;
   background-color: transparent;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  color: white;
+  border: .12em solid transparent;
+  border-radius: 5em;
+  color: $white;
   cursor: pointer;
   display: flex;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  height: 40px;
+  font-family: $primary-font;
+  font-size: .88em;
   justify-content: center;
-  padding: 12px 20px;
+  padding: .75em 1.25em;
   text-decoration: none;
   white-space: nowrap;
 
   &--outlined {
     background-color: transparent;
-    border-color: white;
+    border-color: $white;
   }
 
   &--small {
-    height: 20px;
+    height: 1.25em;
   }
 
   &--primary {
-    border-color: #FF4E50;
-    color: #FF4E50;
+    border-color: $primary-color;
+    color: $primary-color;
   }
 
   &--contained {
-    background-color: #FF4E50;
-    border-color: #FF4E50;
+    background-color: $primary-color;
+    border-color: $primary-color;
     font-weight: 600;
   }
+}
+
+.button.button--outlined.button--primary {
+  font-weight: 700;
+}
+
+.button.button--contained.button--primary {
+  color: $white;
 }

@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.persona {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 232px;
+  padding: 1.5em;
+  width: 232px;
+
+  &__avatar {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 190%;
+    border-radius: 100%;
+    flex: none;;
+    height: 120px;
+    width: 120px;
+  }
+
+  &__name {
+    color: $grey;
+    font-size: .88em;
+    font-weight: 700;
+    margin: 1.25em 0;
+  }
+
+  &__desc {
+    color: $grey700;
+    font-size: .88em;
+    text-align: center;
+  }
+}

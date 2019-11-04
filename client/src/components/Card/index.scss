@@ -1,0 +1,70 @@
+@import '../../variables';
+
+.card {
+  border-radius: .3em;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  height: 43vh;
+  justify-content: flex-end;
+  margin-right: 1.25em;
+  padding: 1.5em;
+  position: relative;
+  width: 17.9vw;
+
+  &__fader {
+    background-blend-mode: multiply;
+    background-image: linear-gradient(transparent, black);
+    border-radius: .3em;
+    height: 100%;
+    left: 0;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .3em;
+    height: 100%;
+    left: 0;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+
+  &__tag {
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 5em;
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    flex: none;
+    font-size: .6em;
+    height: 2.25vh;
+    justify-content: center;
+    letter-spacing: .1em;
+    line-height: 2.25vh;
+    margin-bottom: 1.25em;
+    width: 5.5em;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: .5em 0;
+  }
+
+  &__desc {
+    color: $white;
+    font-size: .88em;
+  }
+}

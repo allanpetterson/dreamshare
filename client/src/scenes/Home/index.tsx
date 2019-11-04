@@ -2,11 +2,25 @@ import React, {Component} from 'react';
 
 // Components
 import Header from '../../components/Header';
+import HeroBanner from '../../components/HeroBanner';
 
 // Styles
 import './index.scss';
-import HeroBanner from '../../components/HeroBanner';
-import {Dictionary, Cards} from '../../constants/Data';
+
+// Containers
+import CardsContainer from '../../containers/Cards';
+import PersonasContainer from '../../containers/Personas';
+import MaillingContainer from '../../containers/Mailling';
+import Logo from '../../components/Logo';
+
+const footerData = [
+    'About',
+    'Contact',
+    'Press',
+    'Blog',
+    'Terms and privacy',
+    'Help'
+];
 
 export default class Home extends Component {
     constructor(props : any) {
@@ -18,25 +32,19 @@ export default class Home extends Component {
             <div className="home">
                 <Header/>
                 <HeroBanner/>
-                <div className="cards-container">
-                    <span className="cards-container__title">
-                        {
-                        Dictionary.CARDS_TITLE
-                    } </span>
-                    <div className="cards-container__items">
-                        {
-                        Cards.map((card, i) => {
-                            return (
-                                <div className="card">
-                                    <div className="card__fader"/>
-                                    <div className="card__background" style={{ backgroundImage: `url(${card.image})` }}/>
-                                    <span className="card__tag">{`STEP ${card.id}`}</span>
-                                    <span className="card__title">{card.title}</span>
-                                    <span className="card__desc">{card.desc}</span>
-                                </div>
-                            )
-                        })
-                    } </div>
+                <CardsContainer/>
+                <PersonasContainer/>
+                <MaillingContainer/>
+                <div className="footer">
+                    <Logo primary/>
+                    <div className="footer__links-container">
+                        <span className="footer__links-title">Company</span>
+                        <div className="footer__links">
+                            {
+                            footerData.map((link) => <span className="footer__link">
+                                {link}</span>)
+                        } </div>
+                    </div>
                 </div>
             </div>
         );

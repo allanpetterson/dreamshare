@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.mailling {
+  &__call {
+    color: $grey700;
+    margin-bottom: 1.5em;
+  }
+
+  &__input-container {
+    display: flex;
+
+    input {
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid $grey200;
+      border-radius: 3px;
+      box-shadow: none;
+      font-family: $primary-font;
+      height: 4.25vh;
+      margin-right: .75em;
+      padding: 0 1em;
+      width: 18vw;
+    }
+  }
+}
