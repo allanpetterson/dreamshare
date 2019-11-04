@@ -1,4 +1,7 @@
-import React, {ReactChildren} from 'react';
+import React from 'react';
+
+// Styles
+import './index.scss';
 
 interface SectionProps {
     title: string;
@@ -6,7 +9,7 @@ interface SectionProps {
     items?: React.ReactNode;
 }
 
-const Section = ({title, children, items} : SectionProps) => <div className="section">
+const Section = ({ title, children, items }: SectionProps) => <div className="section">
     <span className="section__title">
         {title} </span>
     <div className="section__items">

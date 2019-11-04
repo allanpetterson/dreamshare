@@ -1,0 +1,27 @@
+@import '../../variables';
+
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.25em .5em 0;
+  width: 100%;
+
+  &__title {
+    color: $grey;
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 2.5em;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

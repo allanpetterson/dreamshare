@@ -6,7 +6,7 @@ $grey: #444;
 $grey700: #666;
 $grey200: #d4d4d4;
 $primary-font: Montserrat, sans-serif;
-$breakpoints: ('phone': 320px, 'tablet': 768px, 'desktop': 1024px) !default;
+$breakpoints: ('phone': 640px, 'tablet': 768px, 'desktop': 1024px) !default;
 
 @mixin respond-to($breakpoint) {
   @media (max-width: map-get($breakpoints, $breakpoint)) {
