@@ -23,6 +23,8 @@
 
 @include respond-to('phone') {
   .header {
+    padding: 1.25em 0;
+    
     .logo {
       display: none;
     }

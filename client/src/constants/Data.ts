@@ -68,3 +68,12 @@ export enum Dictionary {
   BANNER_DESC = 'And find the perfect partner to fullfill it',
   BANNER_BUTTON = 'Find your holiday partner',
 }
+
+export const footerData = [
+  'About',
+  'Contact',
+  'Press',
+  'Blog',
+  'Terms and privacy',
+  'Help'
+];

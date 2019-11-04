@@ -16,13 +16,13 @@ const CardsContainer = () => {
   const settings: Settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 250,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 720,
         settings: {
           slidesToShow: 1,
           infinite: true,

@@ -8,7 +8,8 @@
 
   &__input-container {
     display: flex;
-
+    align-items: center;
+    
     input {
       background-color: transparent;
       background-image: none;
@@ -16,10 +17,24 @@
       border-radius: 3px;
       box-shadow: none;
       font-family: $primary-font;
-      height: 4.25vh;
+      height: 3em;
       margin-right: .75em;
       padding: 0 1em;
-      width: 18vw;
+      width: 22.5em;
+    }
+  }
+}
+
+@include respond-to('phone') {
+  .mailling__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1em;
+
+    button {
+      width: 22.5em;
+      margin-top: .6em;
     }
   }
 }
