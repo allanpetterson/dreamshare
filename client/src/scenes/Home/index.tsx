@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 // Components
 import Header from '../../components/Header';
@@ -16,12 +16,12 @@ import MaillingContainer from '../../containers/Mailling';
 const Home = () => {
     return (
         <div className="home">
-            <Header/>
-            <HeroBanner/>
-            <CardsContainer/>
-            <PersonasContainer/>
-            <MaillingContainer/>
-            <Footer/>
+            <Header />
+            <HeroBanner />
+            <CardsContainer />
+            <PersonasContainer />
+            <MaillingContainer />
+            <Footer />
         </div>
     );
 }
