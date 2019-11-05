@@ -1,13 +1,22 @@
-Dreamshare
+# Dreamshare Test App
 
-How to Run
+![typescript](https://img.shields.io/badge/typescript-3.6.4-blue.svg)
+![react](https://img.shields.io/badge/react-16.11-blue.svg)
 
-# Install dependencies
-``` cd client && npm install ```
-``` cd server && npm install ```
+Development Tools
+---
 
-# Run server
-npm run server
+- NodeJS (v10 or higher)
 
-# Run client
-npm run client
+For TizenTV
+---
+
+### Install dependencies
+`cd server && npm install`
+
+`cd client && npm install`
+
+### Run application
+1. `npm run server`
+
+2. `npm run client`
