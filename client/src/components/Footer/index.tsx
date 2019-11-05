@@ -17,7 +17,7 @@ const Footer = () => {
                 <span className="footer__links-title">Company</span>
                 <div className="footer__links">
                     {
-                    footerData.map((link) => <span className="footer__link">
+                    footerData.map((link, i) => <span className="footer__link" key={i}>
                         {link}</span>)
                 } </div>
             </div>

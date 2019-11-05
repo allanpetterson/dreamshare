@@ -38,6 +38,7 @@ export const Personas = [
     id: 4,
     name: 'Bradley Hunter',
     desc: 'Based in Chicago. I love playing tennis and loud music',
+    icon: PersonasIcons.TRAVEL,
     photo: 'https://images.unsplash.com/photo-1497472643930-495d25d8ca17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=240',
   }
 ]

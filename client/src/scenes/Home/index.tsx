@@ -16,12 +16,12 @@ import MaillingContainer from '../../containers/Mailling';
 const Home = () => {
     return (
         <div className="home">
-            <Header />
-            <HeroBanner />
-            <CardsContainer />
-            <PersonasContainer />
-            <MaillingContainer />
-            <Footer />
+            <Header/>
+            <HeroBanner/>
+            <CardsContainer/>
+            <PersonasContainer/>
+            <MaillingContainer/>
+            <Footer/>
         </div>
     );
 }

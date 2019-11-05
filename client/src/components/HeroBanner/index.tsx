@@ -3,11 +3,13 @@ import Button from '../Button';
 
 // Styles
 import './index.scss';
-import { Dictionary } from '../../constants/Data';
+import {Dictionary} from '../../constants/Data';
+import Logo from '../Logo';
 
 const HeroBanner: React.FC = () => (
     <div className="hero-banner">
         <div className="hero-banner__background"/>
+        <Logo/>
         <span className="hero-banner__title"
             dangerouslySetInnerHTML={
                 {__html: Dictionary.BANNER_TITLE}
@@ -16,7 +18,8 @@ const HeroBanner: React.FC = () => (
             {
             Dictionary.BANNER_DESC
         }</span>
-        <Button variant="contained"> {
+        <Button variant="contained">
+            {
             Dictionary.BANNER_BUTTON
         } </Button>
     </div>

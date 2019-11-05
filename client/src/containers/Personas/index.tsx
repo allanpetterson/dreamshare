@@ -14,9 +14,9 @@ const PersonasContainer = () => {
       Dictionary.PERSONAS_TITLE
     }
       items={
-        Personas.map((persona) => {
+        Personas.map((persona, i) => {
           return (
-            <Persona persona={persona} />
+            <Persona persona={persona} key={i}/>
           )
         })
       }>

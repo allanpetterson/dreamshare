@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 // Here is possible to implements router
 
@@ -7,29 +7,29 @@ import { connect } from 'react-redux';
 import Home from '../scenes/Home';
 
 // Actions
-import { getCardsAction } from '../store/actions';
+import {getCardsAction} from '../store/actions';
 
 interface AppProps {
-  getCards: () => void;
+    getCards: () => void;
 }
 
 export class App extends Component<AppProps> {
-  componentDidMount() {
-    this.props.getCards();
-  }
-  render() {
-    return (
-      <Home />
-    )
-  }
+    componentDidMount() {
+        this.props.getCards();
+    }
+
+    render() {
+        return (
+            <Home/>)
+    }
 };
 
-const mapDispatchToProps = (dispatch: any) => {
-  return ({
-    getCards: () => {
-      dispatch(getCardsAction());
-    }
-  })
+const mapDispatchToProps = (dispatch : any) => {
+    return({
+        getCards: () => {
+            dispatch(getCardsAction());
+        }
+    })
 }
 
 export default connect(null, mapDispatchToProps)(App);

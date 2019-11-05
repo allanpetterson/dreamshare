@@ -46,11 +46,20 @@
     font-size: 1.5em;
     margin: 1.7em 0;
   }
+
+  .logo {
+    display: none;
+  }
 }
 
 @include respond-to('phone') {
   .hero-banner {
     height: 80%;
+
+    .logo {
+      display: block;
+      margin-bottom: 2em;
+    }
 
     &__title {
       font-size: 2.1em;
